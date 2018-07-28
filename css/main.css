@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', cursive;
+  font-size: 14px;
+}
+
+nav ul{
+  display:  flex;
+  flex-direction:row;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  list-style: none;
+ 
+}
+.wrapper1 {
+      flex-direction:row;
+}
+
+nav li{
+  padding: 1%;
+  height: 60px;
+  list-style: none;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+nav a {
+  color: #56bc94;
+  text-decoration: none;
+  padding: 1em 0;
+  line-height: 1.5em;
+}
+
+.wrapper2 {  
+  width: 100%
+}
+    
+#header{
+  background-image: url("https://umahubportal.ams3.digitaloceanspaces.com/webdev-hackathon2/header.jpg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header h1 {
+  font-size:  3rem;
+}
+#header h2{
+  font-size: 2em;
+}
+#features i {
+  font-size: 3rem;
+}
+/* .wrapper {
+    flex-direction:row;
+} */
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+h1  {
+    padding: 2.5%
+  }
+h2 {
+  margin: 0.5%;
+}
+
+#title {
+  font-size: 5rem;
+}
+#title2{
+  font-size: 2.6rem;
+}
+
+#gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-between;
+  padding: 2em 4em;
+}
+
+#gallery>div{
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1180px;
+  margin:  0 auto;
+}
+
+.content {
+  text-align: center;
+  color: #9aa7af;
+  font-size: 1.2rem;
+  padding: 1em 1em;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#line {
+  width: 40%;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  }
+  
+  h4{
+  color: #56bc94;
+}
+
+  
+h3{
+  color: #9aa7af;
+  text-align: center;
+  font-weight: 700;
+  
+}
+
+.container1 {
+  display: flex;
+  color: #FFFFFF;  
+}
+
+footer{
+  background-color: #56bc94;
+}
+
+footer>div.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+footer a, footer span {
+  color: white;
+  line-height: 3rem;
+  font-size:2.5rem;
+  text-align: center;
+}
+footer span{
+  font-size: 1.5rem;
+}
+
+span {
+   font-size:2rem;
+   padding: 0.5% 2% 0.5% 1%;
+}
+
+
+
+/*Computer*/
+
+@media only screen and (min-width: 800px){
+  
+    #features {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+      
+    }
+  nav ul{
+            display: flex;    
+      flex-direction: row;
+      justify-content: flex-end;
+    
+  }
+  #header{
+    background-image: url("https://umahubportal.ams3.digitaloceanspaces.com/webdev-hackathon2/headerx2.jpg");
+    background-position: center ;
+  
+   }
+  
+  #gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+  }
+  
+  
+ #gallery>div {
+    padding:1em 1em;
+    width: 300px;
+  }
+
+ 
+ 
+    h4{
+      color: #56bc94;
+    }
+
+    h3{
+    color: #9aa7af;
+    }
+
+
+footer>div.container{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-content: baseline;
+  padding: 1em 0;
+}
+
+
+span {
+   font-size:2rem;
+   padding-bottom: 2%;
+}
+
+}
